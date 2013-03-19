@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Analog Last.fm Scrobbler</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/scrobbler.css" rel="stylesheet">
+    <script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scrobbler.js"></script>
+<!--    <script src="js/backbone-min.js"></script>
+    <script src="js/underscore-min.js"></script> --> 
+  </head>
+<body>
+<div class="navbar navbar-inverse">
+  <div class="navbar-inner">
+    <a class="brand" href="#">Analog Scrobbler</a>
+    <form class="navbar-form pull-left">
+    <input type="text" class="span2" id="username" placeholder="username">
+    <form class="navbar-form pull-left">
+    <input type="text" class="span2" id="password" placeholder="password">
+    </form>
+  </div>
+</div>
+
+
+<div class="row-fluid">
+<div class="span6" id="searchdiv">
+<form class="form-horizontal">
+  <legend>Discogs Search</legend>
+  <div class="control-group">
+    <label class="control-label" for="artistsearch">Artist</label>
+    <div class="controls">
+      <input type="text" id="artistsearch">
+    </div>
+  </div>
+  <div class="control-group">
+    <label class="control-label" for="albumsearch">Album</label>
+    <div class="controls">
+      <input type="text" id="albumsearch">
+    </div>
+  </div>
+
+
+<div id="countryselect">
+<label class="radio inline">
+  <input type="radio" name="optionsRadios" id="optionsRadios1" value="US" checked>U.S.
+</label>
+<label class="radio inline">
+  <input type="radio" name="optionsRadios" id="optionsRadios2" value="UK">U.K.
+</label>
+<label class="radio inline">
+  <input type="radio" name="optionsRadios" id="optionsRadios3" value="Canada">Canada
+</label>
+<label class="radio inline">
+  <input type="radio" name="optionsRadios" id="optionsRadios4" value="Germany">Germany
+</label>
+<label class="radio inline">
+  <input type="radio" name="optionsRadios" id="optionsRadios5" value="Japan">Japan
+</label>
+</div> <!-- End country select -->
+
+
+    <div class="control-group">
+    <div class="controls">
+      <button type="button" id="searchbutton" class="btn btn-danger">Search</button>
+    </div>
+  </div>
+</form>
+
+<div class="row-fluid">
+<div class="span6 offset3">
+<h3>Search results</h3>
+<div id="resultstab">
+
+
+
+</div>
+
+
+</div></div>
+</div>
+
+<div id="tracklist" class="span6 offset1">
+
+
+</div>
+
+
+</div>
+
+
+
+
+</body>
+</html>
