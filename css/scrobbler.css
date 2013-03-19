@@ -1,0 +1,15 @@
+h3 {
+	text-align: center;
+}
+
+#resultstab img {
+	padding: 10px;
+}
+
+#countryselect {
+	text-align: center;
+}
+
+.controls button {
+	margin: 20px;
+}
