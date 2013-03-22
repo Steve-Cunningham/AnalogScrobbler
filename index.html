@@ -6,20 +6,35 @@
     <!-- Bootstrap -->
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="css/scrobbler.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/prettyCheckable.css">
+    <script type="text/javascript" src="js/lastfm.api.md5.js"></script>
+    <script type="text/javascript" src="js/lastfm.api.js"></script>
+    <script type="text/javascript" src="js/lastfm.api.cache.js"></script>
+<!--    <script src="js/backbone-min.js"></script>
+    <script src="js/underscore-min.js"></script> --> 
     <script src="http://code.jquery.com/jquery.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scrobbler.js"></script>
-<!--    <script src="js/backbone-min.js"></script>
-    <script src="js/underscore-min.js"></script> --> 
+    <!-- <script src="js/prettyCheckable.js"></script> -->
+    <script type="text/javascript">
+
+        function saveLogin () {
+    var username = document.getElementById("username").value;
+    var password = document.getElementById("password").value;
+    
+    document.cookie = 'username=' + username + '; expires=Thu, 31 Dec 2020 23:59:59 UTC; path=/';
+    document.cookie = 'password=' + password + '; expires=Thu, 31 Dec 2020 23:59:59 UTC; path=/';
+    }
+    </script>
   </head>
 <body>
 <div class="navbar navbar-inverse">
   <div class="navbar-inner">
     <a class="brand" href="#">Analog Scrobbler</a>
     <form class="navbar-form pull-left">
-    <input type="text" class="span2" id="username" placeholder="username">
+    <input type="text" class="span2" id="username" placeholder="username" onblur="saveLogin();">
     <form class="navbar-form pull-left">
-    <input type="text" class="span2" id="password" placeholder="password">
+    <input type="password" class="span2" id="password" placeholder="password" onblur="saveLogin();">
     </form>
   </div>
 </div>
@@ -64,7 +79,7 @@
 
     <div class="control-group">
     <div class="controls">
-      <button type="button" id="searchbutton" class="btn btn-danger">Search</button>
+      <button type="button" id="searchbutton" class="btn btn-primary">Search</button>
     </div>
   </div>
 </form>
@@ -82,16 +97,17 @@
 </div></div>
 </div>
 
-<div id="tracklist" class="span6 offset1">
+<div id="tracklist" class="span6">
+<legend>Tracks:</legend>
+
+
+
 
 
 </div>
 
 
 </div>
-
-
-
 
 </body>
 </html>
