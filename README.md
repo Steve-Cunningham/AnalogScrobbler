@@ -3,17 +3,18 @@ AnalogScrobbler
 
 Vinyl scrobbler for Last.fm using Discogs database.
 
+Status as of 3/25:
+
 Done:
 * Search working, restricted only to LP releases.
 * Added country checkboxes
 * Results display as cover art thumbnails
+* Tracklist displays correctly in results panel
 
 
 To do:
-* Get selected cover to return correct database ID when clicked
-* Display tracklist of selected ID
-* Implement last.fm scrobbling API
-* Implement oauth for last.fm login
+* Prepare results for scrobbling
+* Implement last.fm user authentication 
 
 
 Future planned features:
